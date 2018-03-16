@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by francisco on 3/2/18.
  */
 
-public class DBEmployee extends SQLiteOpenHelper
+public class DBTraining extends SQLiteOpenHelper
 {
     String sql_employee = "CREATE TABLE employee ("+
             "keyEmployee INTEGER PRIMARY KEY, "+
@@ -31,14 +31,12 @@ public class DBEmployee extends SQLiteOpenHelper
             "keyGender INTEGER PRIMARY KEY, "+
             "description VARCHAR(10))";
 
-    public DBEmployee(Context context, String name, SQLiteDatabase.CursorFactory factory, int version)
-    {
+    public DBTraining(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db)
-    {
+    public void onCreate(SQLiteDatabase db) {
         db.execSQL(sql_job);
         db.execSQL("INSERT INTO job(nameJob) VALUES ('Manager')");
         db.execSQL("INSERT INTO job(nameJob) VALUES ('Head of department')");
@@ -54,8 +52,7 @@ public class DBEmployee extends SQLiteOpenHelper
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1)
-    {
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.training.training.Login">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imglogin"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/user"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:id="@+id/edtuser"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="User"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:layout_below="@+id/imglogin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/edtuser"
+        android:layout_alignLeft="@+id/edtuser"
+        android:layout_alignStart="@+id/edtuser" />
+
+    <CheckBox
+        android:id="@+id/chbsession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtpassword"/>
+
+    <Button
+        android:id="@+id/btnlogIn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/chbsession"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Log In"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/background_dark"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnlogIn"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>
+</ScrollView>

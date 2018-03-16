@@ -8,15 +8,13 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AboutOf extends AppCompatActivity
-{
+public class AboutOf extends AppCompatActivity {
     @BindView(R.id.txtwebTec) TextView txtwebTec;
     @BindView(R.id.txtemailDev) TextView txtemailDev;
     @BindView(R.id.txtphoneDev) TextView txtphoneDev;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_of);
 

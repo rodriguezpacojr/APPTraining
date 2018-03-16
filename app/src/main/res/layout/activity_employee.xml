@@ -94,6 +94,18 @@
             android:layout_alignStart="@+id/edtemailEmp"
             android:inputType="text"/>
 
+        <EditText
+            android:id="@+id/edtrfc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="RFC"
+            android:textAlignment="center"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/edtphone"
+            android:layout_alignLeft="@+id/edtphone"
+            android:layout_alignStart="@+id/edtphone"
+            android:inputType="text"/>
+
         <TextView
             android:id="@+id/txtGender"
             android:layout_width="300dp"
@@ -101,9 +113,9 @@
             android:hint="Gender"
             android:textAlignment="center"
             android:layout_marginTop="19dp"
-            android:layout_below="@+id/edtphone"
-            android:layout_alignLeft="@+id/edtphone"
-            android:layout_alignStart="@+id/edtphone" />
+            android:layout_below="@+id/edtrfc"
+            android:layout_alignLeft="@+id/edtrfc"
+            android:layout_alignStart="@+id/edtrfc" />
 
         <Spinner
             android:id="@+id/spnGender"
